@@ -1,0 +1,248 @@
+<!-- Template Start: NYCHAdCCAppletLicensceBase1Col.swt -->
+
+<swe:include file="CCApplet_NamedSpacer.swt"/>
+<swe:form>
+  <table width="100%" cellpadding="1" cellspacing="0" border="0" align="center">
+    <tr>
+      <td class ="AppletBorder">
+        
+        <table valign="top" width="100%" cellpadding="3" cellspacing="0" border="0" bgcolor="#ffffff">
+          <tr>
+            <swe:control id="90">
+              <!-- Inside-applet help text -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff">
+                <tr>
+                  <td>
+                    <swe:this property="DisplayName" hintText="Inside Applet Help Text"/>
+                  </td>
+                </tr>
+              </table>
+            </swe:control>
+          </tr>
+          <tr valign="top">
+            <td>
+              <swe:error>
+                <table width="100%" cellpadding="4" cellspacing="0" border="0">
+                  <tr>
+                    <td class="error">
+                      <swe:this property="FormattedHtml"/>
+                    </td>
+                  </tr>
+                </table>
+              </swe:error>
+              
+              
+              <swe:control id="92">
+                <!-- Inside-applet help text -->
+	 			<table width="100%" cellpadding="4" cellspacing="0" border="0" bgcolor="#ffffff">
+                  <tr>
+                    <td>
+                      <swe:this property="DisplayName" hintText="Inside Applet Help Text"/>
+                    </td>
+                  </tr>
+              </table>
+          </swe:control>
+          
+	<table width="100%" border="0" cellpadding="0"  cellspacing="4" bgcolor="#ffffff">
+		<tr>
+		      <td valign="top" width="1220">
+			<div unselectable="on">
+			  <font color="#000000">
+			    <p style="font-size:14px;"><b>Complete your Transfer Process in just five easy steps!</b>
+			    </p>
+			    </font>
+			<br>
+				<b>Step 1:&nbsp;&nbsp; Family Composition</b>
+			</br>
+			<br>
+				Verify your family composition. Please review the names and details of all authorized members in your household.
+			</br>
+			<br>
+				<b>Step 2:&nbsp;&nbsp; Transfer Reason</b>
+			</br>
+			<br>
+				Enter the reason for your transfer, reasonable accommodation information, etc.
+			</br> 
+			<br>
+				<b>Step 3:&nbsp;&nbsp; Development/Borough Selection</b>
+			</br>
+			<br>
+				Based on the type of transfer request select your borough or development choice.
+			</br> 
+			<br>
+				<b> Step 4:&nbsp;&nbsp; Transfer Confirmation</b>
+			</br>
+			<br>
+				Confirm the details about your transfer request.  You will need to electronically 'sign' your request when finished
+			</br>
+			<br>
+				<b> Step 5:&nbsp;&nbsp; Upload Documents</b>
+			</br>
+			<br>
+				Based on the information provided, you may be required to submit documents such as medical letters, police reports, employment letters, etc... This page will provide you with a summary of the documents needed to process your transfer.  Upload all documents required to complete your transfer. 
+			</br>
+			<br>
+				<b><a href="images/HELP/Transfer_Reason.pdf" target="_blank"> &nbsp;Click here &nbsp;</a>for Transfer Type description and Documentation required to submit Transfer.</b>
+			</br>
+			<br>				
+			</br>
+		</p>
+		</font>
+		</div>
+		</td>
+		</tr>
+	</table>
+<table align="center">
+  <swe:for-each count="1" startValue="2000" iteratorName="currentId">
+    <swe:control id="swe:currentId" hintMapType="FormItem">
+      <tr valign="bottom">
+        <td class="dCCItemLabel">
+          <swe:this property="RequiredIndicator" hintText="Required"/>
+          <swe:this property="DisplayName" hintText="Label"/>
+          :
+        </td>
+        
+        <td>
+          <table cellpadding="0" cellspacing="0" border="0">
+            <tr valign="bottom">
+              <td class="dCCItemValue" align="swe:this.TextAlignment">
+                <swe:this property="FormattedHtml" hintText="Field"/>
+              </td>
+			</swe:control>
+                  <swe:control id="swe:currentId+5" hintMapType="FormItem">
+                    <td class="dCCItemValue" align="swe:this.TextAlignment">
+                      <swe:this property="FormattedHtml"/>
+                    </td>
+                  </swe:control>
+                  <swe:control id="swe:currentId+10" hintMapType="FormItem">
+                    <td class="dCCItemLabel" align="swe:this.TextAlignment">
+                      <swe:this property="DisplayName"/>
+                      :
+                    </td>
+                  </swe:control>
+                  <swe:control id="swe:currentId+15" hintMapType="FormItem">
+                    <td class="dCCItemValue" align="swe:this.TextAlignment">
+                      <swe:this property="FormattedHtml"/>
+                    </td>
+                  </swe:control>
+                  <swe:control id="swe:currentId">
+                    
+                  </tr>
+              </table>
+  </td>
+  <td width="10%">
+    &nbsp;
+  </td>
+  </tr>
+</swe:control>
+</swe:for-each>
+
+</table>
+<!-- NYCHA -->
+<table>
+  <swe:for-each count="2" startValue="1300" iteratorName="currentId">
+    <swe:control id="swe:currentId+100">
+      <tr>
+        <td class="dCCItemLabelLeft">
+          <swe:this property="FormattedHtml" hintText="Label"/>
+        </td>
+      </tr>
+    </swe:control>
+  </swe:for-each>
+  
+  <tr>
+    <td width=20>
+      &nbsp;
+    </td>
+    <td>
+      <table width="100%" cellpadding="4" cellspacing="0" border="0">
+        <tr>
+          <swe:control id="132">
+            <td>
+              <img src='images/spacer.gif' height=1 width=100>
+            </td>
+          </swe:control>
+          
+          <swe:control id="133">
+            <td>
+              <img src='images/spacer.gif' height=1 width=100>
+            </td>
+          </swe:control>
+          
+          <swe:control id="141">
+            <td>
+              <img src='images/spacer.gif' height=1 width=100>
+            </td>
+          </swe:control>
+          
+          <swe:control id="142">
+            <td>
+              <img src='images/spacer.gif' height=1 width=100>
+            </td>
+          </swe:control>
+          
+          <swe:control id="157">
+            <td>
+              <img src='images/spacer.gif' height=1 width=100>
+            </td>
+          </swe:control>
+          
+          <swe:control id="158">
+            <td>
+              <img src='images/spacer.gif' height=1 width=100>
+            </td>
+          </swe:control>
+          
+          <td width="100%">
+            <img src='images/spacer.gif' height=1 width=1>
+          </td>
+        </tr>
+        <tr>
+          <swe:control id="132">
+            <!-- Optional, 132 -->
+            <td nowrap>
+              <swe:this property="FormattedHtml"  hintMapType="Control"/>
+            </td>
+          </swe:control>
+          
+          <swe:control id="133">
+            <!-- Optional, 143 -->
+            <td nowrap>
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </td>
+          </swe:control>
+          
+          <swe:control id="141">
+            <!-- Optional, 145 -->
+            <td nowrap>
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </td>
+          </swe:control>
+          
+          <swe:control id="142">
+            <!-- Optional, 146 -->
+            <td nowrap>
+              <swe:this property="FormattedHtml" hintMapType="Control"/>
+            </td>
+          </swe:control>
+          <td width="100%">
+            &nbsp;
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+
+<swe:include file="CCBottomApplet_NamedList.swt"/>
+
+
+</swe:form>
+</span>
+<!-- Template End: NYCHAdCCAppletLicenseBase1Col.swt -->
